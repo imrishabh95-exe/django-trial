@@ -1,4 +1,29 @@
 {% extends 'base.html' %}
 
-{% block body %}This is my contact{% endblock body %}
 {% block title %}This is my contact{% endblock title %}
+{% block body %}
+<div class="container">
+    <img src="https://source.unsplash.com/1600x400/?email" class="d-block w-100 my-4" alt="...">
+</div>
+<div class="container">
+    <h1 class="text-center">Contact Us</h1>
+    <form method="POST" action="/contact">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter you name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter you phone number here ">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Write your sugggestions</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+{% endblock body %}
