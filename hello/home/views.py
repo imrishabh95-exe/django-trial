@@ -10,7 +10,7 @@ def index(request):
     context = {
         'variable':'This is sent',
     }
-    messages.success(request, 'This is a test message')
+    messages.success(request, 'Get 40% OFF!!')
     return render(request, 'index.html', context)
 
 def about(request):
